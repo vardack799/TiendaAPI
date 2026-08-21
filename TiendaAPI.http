@@ -1,0 +1,20 @@
+@baseUrl = https://localhost:7229
+
+### Obtener todos los productos
+GET {{baseUrl}}/api/productos
+
+### Obtener producto por ID
+GET {{baseUrl}}/api/productos/1
+
+### Crear producto nuevo
+POST {{baseUrl}}/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Silla Gamer",
+  "precio": 450000,
+  "stock": 3
+}
+
+### Eliminar producto
+DELETE {{baseUrl}}/api/productos/1
